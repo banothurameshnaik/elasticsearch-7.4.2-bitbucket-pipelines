@@ -35,3 +35,13 @@ pipelines:
     '**':
       - step: *run-tests
 ```
+
+## Test and build
+
+`docker build -t rameshnaik5521/elasticsearch-bitbucket-pipelines .`
+
+When you commit to the bitbucket repo it will then trigger the image to be rebuilt on dockerhub.
+
+Run the container locally after building.
+
+`docker run -d -p 9200:9200 rameshnaik5521/elasticsearch-bitbucket-pipelines:latest`
