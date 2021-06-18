@@ -44,4 +44,4 @@ When you commit to the bitbucket repo it will then trigger the image to be rebui
 
 Run the container locally after building.
 
-`docker run -d -p 9200:9200 rameshnaik5521/elasticsearch-bitbucket-pipelines:latest`
+`docker run -d -p 9200:9200 -p 9300:9300 rameshnaik5521/elasticsearch-bitbucket-pipelines:latest`
